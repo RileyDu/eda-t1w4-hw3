@@ -10,8 +10,12 @@ function addItem(item){
 console.log('Was the item added?', addItem("apples"))
 console.log('What is in the basket now?', basket);
 
-
-
+function listItems(basket){
+    for (item of basket){
+        console.log(item);
+    }
+}
+console.log(listItems(basket))
 
 
 
