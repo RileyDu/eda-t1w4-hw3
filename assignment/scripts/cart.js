@@ -7,7 +7,8 @@ function addItem(item){
     basket.push(item);
     return true;
 }
-console.log(addItem("apples"))
+console.log('Was the item added?', addItem("apples"))
+console.log('What is in the basket now?', basket);
 
 
 
