@@ -10,8 +10,9 @@ function addItem(item) {
 console.log("Was the item added?", addItem("apples"));
 console.log("What is in the basket now?", basket);
 console.log("Was the item added?", addItem("pears"));
-addItem('watermelon');
-addItem('limes')
+addItem("watermelon");
+addItem("limes");
+console.log("Well what is in the basket now?", basket);
 
 function listItems(basket) {
   for (item of basket) {
@@ -20,6 +21,13 @@ function listItems(basket) {
 }
 listItems(basket);
 console.log(basket);
+
+function empty(basket) {
+    basket.length = 0;
+}
+empty;
+console.log('Is the array empty now?', listItems(basket))
+
 
 // DO NOT MODIFY
 // Used for automated testing
