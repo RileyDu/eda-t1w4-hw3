@@ -32,13 +32,18 @@ console.log("Is the array empty now?", basket);
 
 // STRETCH GOALS
 const maxItems = 5;
-function isFull(i) {
-  if (i < maxItems) {
-    return false;
-  } else if (i >= maxItems) {
-    return true;
-  }
+function isFull(basket) {
+  return basket >= maxItems;
 }
+console.log("The basket is empty, we should return false", isFull(basket));
+addItem("carrot");
+addItem("rice");
+addItem("dog food");
+addItem("soup");
+addItem("yogurt");
+listItems(basket);
+console.log("The basket is 5 items, we should return true", isFull(basket));
+
 // DO NOT MODIFY
 // Used for automated testing
 try {
