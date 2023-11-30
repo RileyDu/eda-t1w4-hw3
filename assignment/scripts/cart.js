@@ -20,13 +20,16 @@ function listItems(basket) {
   }
 }
 listItems(basket);
-console.log(basket);
 
-function empty(basket) {
-    basket.length = 0;
+
+function empty(arr) {
+    while (arr.length > 0) {
+        arr.pop();
+    }
 }
-empty;
-console.log('Is the array empty now?', listItems(basket))
+
+empty(basket);
+console.log('Is the array empty now?', basket);
 
 
 // DO NOT MODIFY
