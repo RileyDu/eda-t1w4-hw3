@@ -21,17 +21,24 @@ function listItems(basket) {
 }
 listItems(basket);
 
-
 function empty(arr) {
-    while (arr.length > 0) {
-        arr.pop();
-    }
+  while (arr.length > 0) {
+    arr.pop();
+  }
 }
 
 empty(basket);
-console.log('Is the array empty now?', basket);
+console.log("Is the array empty now?", basket);
 
-
+// STRETCH GOALS
+const maxItems = 5;
+function isFull(i) {
+  if (i < maxItems) {
+    return false;
+  } else if (i >= maxItems) {
+    return true;
+  }
+}
 // DO NOT MODIFY
 // Used for automated testing
 try {
