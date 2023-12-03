@@ -44,7 +44,9 @@ addItem("yogurt");
 listItems(basket);
 console.log("The basket is 5 items, we should return true", isFull(basket));
 
-
+function removeItem(item){
+    
+}
 
 
 // DO NOT MODIFY
